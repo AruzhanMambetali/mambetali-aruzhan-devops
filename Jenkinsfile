@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
 
@@ -21,5 +20,18 @@ pipeline {
                 sh 'java -cp app Main'
             }
         }
+
+        stage('Docker Build') {
+            steps {
+                sh 'docker build -t mambetali-aruzhan-devops:1.0 .'
+            }
+        }
+
+        stage('Docker Test') {
+            steps {
+                sh 'docker run --rm mambetali-aruzhan-devops:1.0'
+            }
+        }
     }
 }
+
