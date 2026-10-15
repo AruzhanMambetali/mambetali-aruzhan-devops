@@ -1,0 +1,5 @@
+Name: Aruzhan
+Surname: Mambetali
+Group: IT2-2309
+Student ID: 41558
+Course: DevOps
