@@ -1,0 +1,11 @@
+
+services:
+  aruzhan-app:
+    build: .
+    image: mambetali-aruzhan-devops:1.0
+    container_name: mambetali-aruzhan-container
+    environment:
+      STUDENT_NAME: Aruzhan
+      STUDENT_SURNAME: Mambetali
+      STUDENT_GROUP: IT2-2309
+      STUDENT_ID: "41558"
